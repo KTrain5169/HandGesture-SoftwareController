@@ -2,10 +2,13 @@
 # -*- coding: utf-8 -*-
 import csv
 import copy
+import pyautogui
+import time
 import argparse
 import itertools
 from collections import Counter
 from collections import deque
+import keyboard
 
 import cv2 as cv
 import numpy as np
@@ -14,6 +17,7 @@ import mediapipe as mp
 from utils import CvFpsCalc
 from model import KeyPointClassifier
 from model import PointHistoryClassifier
+previous_hand_sign_id = None  # Initialize to None
 
 
 def get_args():
@@ -145,6 +149,25 @@ def main():
                     point_history.append(landmark_list[8])
                 else:
                     point_history.append([0, 0])
+
+                
+                #Control Keyboard Inputs
+
+                global previous_hand_sign_id  # Declare previous_hand_sign_id as a global variable
+    
+                # Release the previous key if it's different from the current hand_sign_id
+                if previous_hand_sign_id is not None and previous_hand_sign_id != hand_sign_id:
+                    keyboard.release('right')
+                    keyboard.release('left')
+                
+                # Handle the current hand_sign_id
+                if hand_sign_id == 1:
+                    keyboard.press('right')
+                elif hand_sign_id == 3:
+                    keyboard.press('left')
+                
+                # Update the previous_hand_sign_id
+                previous_hand_sign_id = hand_sign_id
 
                 # Finger gesture classification
                 finger_gesture_id = 0
