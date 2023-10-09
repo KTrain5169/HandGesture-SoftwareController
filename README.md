@@ -15,4 +15,4 @@ To get started with HandGesture-SoftwareController, follow these steps:
 1. **Installation**: Clone this repository to your local machine.
 
    ```bash
-   git clone https://github.com/your-username/HandGesture-SoftwareController.git
+   git clone https://github.com/EthanSpleefan/HandGesture-SoftwareController.git
