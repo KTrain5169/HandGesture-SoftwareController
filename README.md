@@ -18,6 +18,7 @@ PREPARATION: This program has libraries that only work with Python 3.9. Please e
 
    ```bash
    git clone https://github.com/EthanSpleefan/HandGuesture-SoftwareController.git
+   ```
 2. **Dependencies**: Ensure all libraries listed in [`requirements.txt`](./requirements.txt) are installed on your machine. You can install them with:
    ```bash
    pip install <library>
