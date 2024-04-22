@@ -16,3 +16,6 @@ To get started with HandGesture-SoftwareController, follow these steps:
 
    ```bash
    git clone https://github.com/EthanSpleefan/HandGuesture-SoftwareController.git
+
+2. **Install requirements**
+Install the requirements with pip freeze > requirements.txt
