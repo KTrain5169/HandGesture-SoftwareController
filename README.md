@@ -19,4 +19,4 @@ To get started with HandGesture-SoftwareController, follow these steps:
 
 2. **Install requirements**: Install the requirements with 
 ```bash
-pip freeze > requirements.txt
+pip install -r requirements. txt
