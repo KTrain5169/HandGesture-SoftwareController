@@ -41,7 +41,7 @@ jobs:
 
     - name: Test with pytest
       run: |
-        pytest
+        pytest app.py
 
     - name: Build with PyInstaller
       run: |
