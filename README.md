@@ -12,7 +12,22 @@ HandGesture-SoftwareController is a hand gesture-based game controller software 
 ## Getting Started
 To get started with HandGesture-SoftwareController, follow these steps:
 
+PREPARATION: This program has libraries that only work with Python 3.9. Please ensure you have installed Python 3.9, instructions can be found [here](https://www.python.org/downloads/)
+
 1. **Installation**: Clone this repository to your local machine.
 
    ```bash
-   git clone https://github.com/EthanSpleefan/HandGesture-SoftwareController.git
+   git clone https://github.com/EthanSpleefan/HandGuesture-SoftwareController.git
+   ```
+2. **Dependencies**: Ensure all libraries listed in [`requirements.txt`](./requirements.txt) are installed on your machine. You can install them with:
+   ```bash
+   pip install <library>
+   ```
+   or 
+   
+   ```bash
+   pip install -r requirements. txt
+   ```
+   and replace `<library>` with the name of the required library.
+3. **Run the file***: Open `app.py` in your code editor and choose to Run the script.
+=======
